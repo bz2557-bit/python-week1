@@ -225,7 +225,6 @@ for participant in range(1, 3):
 import numpy as np
 
 
-data = data.copy()
 data["amount_chosen"] = np.where(
     data["choice"] == 1, data["money_right"],
     np.where(data["choice"] == 0, data["money_left"], np.nan)
